@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="626.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simsfamilytreegenerator.AddToFamilyController">
+   <children>
+      <Circle fill="#eeeeee" layoutX="56.0" layoutY="56.0" radius="42.0" stroke="BLACK" strokeType="INSIDE" />
+      <TextField fx:id="nameField" layoutX="113.0" layoutY="44.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="113.0" layoutY="14.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="347.0" layoutY="16.0" prefHeight="67.0" prefWidth="240.0" style="-fx-background-color: eeeeee;">
+         <children>
+            <Label layoutX="14.0" layoutY="3.0" text="Sex">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="femaleRadio" layoutX="14.0" layoutY="34.0" mnemonicParsing="false" onAction="#clickFemale" text="Female">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="maleRadio" layoutX="129.0" layoutY="36.0" mnemonicParsing="false" onAction="#clickMale" text="Male">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Pane>
+      <TextArea fx:id="descriptionField" layoutX="21.0" layoutY="155.0" prefHeight="200.0" prefWidth="559.0" />
+      <ComboBox layoutX="347.0" layoutY="98.0" prefHeight="39.0" prefWidth="240.0" promptText="Sim State" />
+      <Pane layoutX="23.0" layoutY="393.0" prefHeight="57.0" prefWidth="559.0" style="-fx-background-color: eeeeee;" />
+      <Label layoutX="26.0" layoutY="364.0" text="Traits">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="439.0" layoutY="573.0" mnemonicParsing="false" onAction="#saveAndClose" prefHeight="39.0" prefWidth="143.0" text="Save &amp; Close">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="347.0" layoutY="573.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

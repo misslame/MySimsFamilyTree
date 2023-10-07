@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simsfamilytreegenerator.FamilyEditController">
+   <children>
+      <TextField fx:id="familyName" layoutX="55.0" layoutY="83.0" onAction="#clearError" prefHeight="51.0" prefWidth="484.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="55.0" layoutY="30.0" text="Family Tree Name">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="147.0" prefHeight="53.0" prefWidth="429.0" text="Root Node">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="familyRoot" layoutX="55.0" layoutY="200.0" onAction="#clearError" prefHeight="51.0" prefWidth="484.0" />
+      <Button layoutX="412.0" layoutY="335.0" mnemonicParsing="false" onAction="#saveAndClose" text="Save &amp; Close">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="297.0" layoutY="335.0" mnemonicParsing="false" onAction="#clearError" text="Cancel">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorMessage" layoutX="55.0" layoutY="280.0" textFill="#800000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
